@@ -13,7 +13,7 @@ export default function Home() {
         </div>
 
         <div className="hidden md:flex items-center gap-8 text-sm text-gray-300">
-          <a href="#about" className="hover:text-white transition">About</a>
+          <Link href="/about" className="hover:text-white transition">About</Link>
           <a href="#contact" className="hover:text-white transition">Contact</a>
           <a href="#help" className="hover:text-white transition">Help</a>
         </div>
