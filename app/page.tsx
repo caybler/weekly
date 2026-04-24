@@ -30,12 +30,12 @@ export default function Home() {
             Get Started
           </Link>
 
-          <a
-            href="#about"
+          <Link
+            href="/about"
             className="px-7 py-4 rounded-xl border border-white/20 hover:bg-white/10 transition font-medium"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </section>
 
