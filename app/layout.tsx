@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-black text-white">
-        <nav className="relative z-50 flex items-center justify-between px-8 py-6">
+        <nav className="sticky top-0 z-50 flex w-full items-center justify-between border-b border-white/10 bg-black px-8 py-6">
           <Link href="/" className="text-2xl font-bold text-white">
             Week<span className="text-blue-500">ly</span>
           </Link>
@@ -53,8 +53,10 @@ export default function RootLayout({
             </Link>
           </div>
         </nav>
+        
 
         {children}
+
       </body>
     </html>
   );

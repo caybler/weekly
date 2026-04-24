@@ -6,84 +6,67 @@ export default function Signup() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#0b2a5f_0%,#020617_35%,#000_75%)]" />
 
       <section className="relative z-10 flex min-h-[85vh] items-center justify-center px-8 py-16">
-        <div className="w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-
-          {/* Header */}
-          <div className="mb-8 text-center">
+        <div className="w-full max-w-4xl">
+          <div className="mb-10 text-center">
             <p className="mb-3 text-blue-400 text-sm uppercase tracking-[0.3em]">
-              Get Started
+              Create Account
             </p>
 
-            <h1 className="text-4xl font-bold">Create your account</h1>
+            <h1 className="text-4xl md:text-5xl font-bold">
+              How are you joining Weekly?
+            </h1>
 
             <p className="mt-3 text-gray-400">
-              Start managing your rosters with Weekly.
+              Choose whether you are setting up a business or joining as an employee.
             </p>
           </div>
 
-          {/* Form */}
-          <form className="space-y-5">
-
-            <div>
-              <label className="mb-2 block text-sm text-gray-300">
-                Full Name
-              </label>
-              <input
-                type="text"
-                placeholder="Your name"
-                className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-blue-500"
-              />
-            </div>
-
-            <div>
-              <label className="mb-2 block text-sm text-gray-300">
-                Email
-              </label>
-              <input
-                type="email"
-                placeholder="you@example.com"
-                className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-blue-500"
-              />
-            </div>
-
-            <div>
-              <label className="mb-2 block text-sm text-gray-300">
-                Password
-              </label>
-              <input
-                type="password"
-                placeholder="Create a password"
-                className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-blue-500"
-              />
-            </div>
-
-            <div>
-              <label className="mb-2 block text-sm text-gray-300">
-                Confirm Password
-              </label>
-              <input
-                type="password"
-                placeholder="Confirm your password"
-                className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-blue-500"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full rounded-xl bg-blue-500 px-6 py-3 font-medium text-white hover:bg-blue-600 transition"
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link
+              href="/signup/business"
+              className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur hover:bg-white/10 transition"
             >
-              Sign Up
-            </button>
-          </form>
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500">
+                🏢
+              </div>
 
-          {/* Footer */}
-          <p className="mt-6 text-center text-sm text-gray-400">
+              <h2 className="text-2xl font-bold mb-3">Business Owner</h2>
+
+              <p className="text-gray-400 mb-6">
+                Create your business profile, add locations, set up roles, and invite your staff.
+              </p>
+
+              <span className="text-blue-400 font-medium">
+                Set up a business →
+              </span>
+            </Link>
+
+            <Link
+              href="/signup/employee"
+              className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur hover:bg-white/10 transition"
+            >
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500">
+                👤
+              </div>
+
+              <h2 className="text-2xl font-bold mb-3">Employee</h2>
+
+              <p className="text-gray-400 mb-6">
+                Join an existing business using your invite code from your manager or admin.
+              </p>
+
+              <span className="text-blue-400 font-medium">
+                Join with invite code →
+              </span>
+            </Link>
+          </div>
+
+          <p className="mt-8 text-center text-sm text-gray-400">
             Already have an account?{" "}
             <Link href="/login" className="text-blue-400 hover:text-blue-300">
               Login
             </Link>
           </p>
-
         </div>
       </section>
     </main>
