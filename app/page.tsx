@@ -6,34 +6,6 @@ export default function Home() {
       {/* Background glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#0b2a5f_0%,#020617_35%,#000_75%)]" />
 
-      {/* Navbar */}
-      <nav className="relative z-10 flex items-center justify-between px-8 py-6">
-        <div className="text-2xl font-bold">
-          Week<span className="text-blue-500">ly</span>
-        </div>
-
-        <div className="hidden md:flex items-center gap-8 text-sm text-gray-300">
-          <Link href="/about" className="hover:text-white transition">About</Link>
-          <a href="#contact" className="hover:text-white transition">Contact</a>
-          <a href="#help" className="hover:text-white transition">Help</a>
-        </div>
-
-        <div className="flex items-center gap-3">
-          <Link
-            href="/login"
-            className="px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
-          >
-            Login
-          </Link>
-
-          <Link
-            href="/signup"
-            className="px-4 py-2 rounded-xl bg-blue-500 hover:bg-blue-600 transition"
-          >
-            Sign Up
-          </Link>
-        </div>
-      </nav>
 
       {/* Hero */}
       <section className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-28 pb-20">

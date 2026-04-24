@@ -5,23 +5,6 @@ export default function About() {
     <main className="min-h-screen bg-black text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#0b2a5f_0%,#020617_35%,#000_75%)]" />
 
-      <nav className="relative z-10 flex items-center justify-between px-8 py-6">
-        <Link href="/" className="text-2xl font-bold">
-          Week<span className="text-blue-500">ly</span>
-        </Link>
-
-        <div className="flex items-center gap-6 text-sm text-gray-300">
-          <Link href="/" className="hover:text-white transition">Home</Link>
-          <Link href="/contact" className="hover:text-white transition">Contact</Link>
-          <Link href="/help" className="hover:text-white transition">Help</Link>
-          <Link
-            href="/login"
-            className="px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
-          >
-            Login
-          </Link>
-        </div>
-      </nav>
 
       <section className="relative z-10 px-8 py-24 text-center">
         <p className="mb-4 text-blue-400 text-sm uppercase tracking-[0.3em]">
